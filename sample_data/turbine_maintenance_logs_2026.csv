@@ -1,0 +1,7 @@
+Log_ID,Equipment_Tag,Date,Component,Failure_Mode,Action_Taken,Operator_Initials
+LOG-9201,TURB-04B,2026-01-14,Rotor,Bearing overheating/vibration,Replaced thrust bearings and flushed lube oil system,J.D.
+LOG-9202,TURB-01A,2026-02-03,Stator,Insulation breakdown,Rewound stator coils and performed high-voltage test,M.S.
+LOG-9203,TURB-02C,2026-03-22,Cooling System,Coolant leak,Patched heat exchanger casing and refilled coolant,A.T.
+LOG-9204,TURB-04B,2026-04-05,Control Valve,Actuator stuck open,Recalibrated servo valve and replaced hydraulic fluid,J.D.
+LOG-9205,TURB-03A,2026-05-11,Blades,Erosion on leading edge,Performed laser cladding on affected blades,R.K.
+LOG-9206,TURB-01B,2026-06-18,Governor,Speed fluctuation,Replaced electronic speed controller module,M.S.

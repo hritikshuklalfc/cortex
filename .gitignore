@@ -1,0 +1,25 @@
+# Node
+node_modules/
+.next/
+out/
+build/
+dist/
+
+# Python
+venv/
+env/
+__pycache__/
+*.pyc
+
+# Environment variables
+.env
+.env.local
+
+# Databases and large data
+chroma_db/
+knowledge.db
+temp/
+
+# OS files
+.DS_Store
+Thumbs.db

@@ -1,0 +1,23 @@
+OIL INDUSTRY SAFETY DIRECTORATE (OISD) COMPLIANCE CHECKLIST
+Refinery Operations & Hot Work Safety Audits
+Version: 2026.1
+
+[ ] PERMIT TO WORK (PTW) SYSTEM
+    - Are hot work permits issued only after a joint site inspection by the issuer and executor?
+    - Is the validity of the permit clearly stated (max 8 hours or single shift)?
+    - Are lower explosive limit (LEL) gas tests conducted and recorded at 0% before authorizing welding/cutting?
+
+[ ] FIRE PREVENTION & PROTECTION
+    - Are spark arrestors fitted to all diesel-driven equipment operating in Zone 1/Zone 2 hazardous areas?
+    - Are fire blankets (minimum 1000°C rating) deployed to cover grating and prevent slag from dropping to lower elevations?
+    - Is a dedicated fire watch personnel stationed with a charged fire extinguisher (minimum 9kg DCP)?
+
+[ ] ELECTRICAL SAFETY
+    - Are all welding machines properly grounded to a verified earth pit (resistance < 1 ohm)?
+    - Are power cables free of joints, cuts, and routed away from walkways to prevent tripping or damage?
+    - Is an Earth Leakage Circuit Breaker (ELCB / RCCB) with 30mA sensitivity installed on all temporary power distribution boards?
+
+[ ] CONFINED SPACE ENTRY
+    - Is forced ventilation running continuously to ensure oxygen levels remain between 19.5% and 23.5%?
+    - Has a rescue plan been formulated, and is rescue equipment (tripod, winch, SCBA) staged at the entry point?
+    - Is an entry/exit log maintained by a standby person (hole watch)?

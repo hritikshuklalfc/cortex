@@ -1,0 +1,227 @@
+@import "tailwindcss";
+
+/* ─── Vardex Stealth Intelligence Design System ─── */
+
+@theme {
+  /* Surface palette — pure black monochrome */
+  --color-surface-lowest: #0e0e0e;
+  --color-surface-dim: #141313;
+  --color-surface-low: #1c1b1b;
+  --color-surface: #141313;
+  --color-surface-container: #201f1f;
+  --color-surface-container-high: #2a2a2a;
+  --color-surface-container-highest: #353434;
+  --color-surface-bright: #3a3939;
+
+  /* Text */
+  --color-on-surface: #e5e2e1;
+  --color-on-surface-variant: #c4c7c8;
+  --color-primary: #ffffff;
+  --color-outline: #8e9192;
+  --color-outline-variant: #444748;
+
+  /* Accents */
+  --color-accent-green: #34d399;
+  --color-accent-red: #ff6b6b;
+  --color-accent-amber: #f59e0b;
+}
+
+/* ─── Base Styles ─── */
+
+@layer base {
+  * {
+    scrollbar-width: thin;
+    scrollbar-color: #3a3939 #0e0e0e;
+  }
+
+  *::-webkit-scrollbar {
+    width: 1px;
+  }
+
+  *::-webkit-scrollbar-track {
+    background: #0e0e0e;
+  }
+
+  *::-webkit-scrollbar-thumb {
+    background: #3a3939;
+  }
+
+  body {
+    background-color: #0e0e0e;
+    color: #ffffff;
+    overflow-x: hidden;
+    min-height: 100vh;
+    font-family: "Geist", sans-serif;
+  }
+
+  ::selection {
+    background: #ffffff;
+    color: #141313;
+  }
+}
+
+/* ─── Utility Classes ─── */
+
+@layer components {
+  /* Vertical grid rules */
+  .vertical-rule {
+    width: 1px;
+    background-color: rgba(255, 255, 255, 0.05);
+    height: 100vh;
+    position: fixed;
+    pointer-events: none;
+    z-index: 10;
+  }
+
+  /* Google Material Symbols default settings */
+  .material-symbols-outlined {
+    font-variation-settings: "FILL" 0, "wght" 300, "GRAD" 0, "opsz" 24;
+  }
+
+  /* Vardex label typography */
+  .text-label {
+    font-family: "JetBrains Mono", monospace;
+    font-size: 10px;
+    line-height: 14px;
+    letter-spacing: 0.04em;
+    font-weight: 500;
+    text-transform: uppercase;
+  }
+
+  .text-label-md {
+    font-family: "JetBrains Mono", monospace;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 0.02em;
+    font-weight: 500;
+    text-transform: uppercase;
+  }
+
+  .text-label-lg {
+    font-family: "JetBrains Mono", monospace;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.02em;
+    font-weight: 500;
+  }
+
+  /* Vardex headline typography */
+  .text-headline-sm {
+    font-family: "Geist", sans-serif;
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: -0.01em;
+    font-weight: 500;
+  }
+
+  .text-headline-md {
+    font-family: "Geist", sans-serif;
+    font-size: 32px;
+    line-height: 40px;
+    letter-spacing: -0.02em;
+    font-weight: 600;
+  }
+
+  .text-headline-lg {
+    font-family: "Geist", sans-serif;
+    font-size: 40px;
+    line-height: 48px;
+    letter-spacing: -0.02em;
+    font-weight: 600;
+  }
+
+  /* Vardex body typography */
+  .text-body-sm {
+    font-family: "Geist", sans-serif;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 400;
+  }
+
+  .text-body-md {
+    font-family: "Geist", sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+  }
+
+  .text-body-lg {
+    font-family: "Geist", sans-serif;
+    font-size: 18px;
+    line-height: 28px;
+    font-weight: 400;
+  }
+
+  /* Sparkline animation */
+  .sparkline-bar {
+    transition: height 1.5s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  /* Pulse animation for vibration bars */
+  @keyframes vardex-pulse {
+    0%, 100% { opacity: 0.2; }
+    50% { opacity: 0.4; }
+  }
+
+  .vardex-pulse {
+    animation: vardex-pulse 2s ease-in-out infinite;
+  }
+
+  /* Status dot pulse */
+  @keyframes status-pulse {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.4; }
+  }
+
+  .status-pulse {
+    animation: status-pulse 2s ease-in-out infinite;
+  }
+
+  /* Typing dots */
+  .typing-dot {
+    animation: typing-bounce 1.4s infinite ease-in-out both;
+  }
+
+  .typing-dot:nth-child(1) { animation-delay: -0.32s; }
+  .typing-dot:nth-child(2) { animation-delay: -0.16s; }
+  .typing-dot:nth-child(3) { animation-delay: 0s; }
+
+  @keyframes typing-bounce {
+    0%, 80%, 100% { transform: scale(0); opacity: 0.4; }
+    40% { transform: scale(1); opacity: 1; }
+  }
+
+  /* File chip selection */
+  .file-chip {
+    transition: all 0.2s ease;
+  }
+
+  .file-chip:hover {
+    background-color: var(--color-surface-bright);
+  }
+
+  .file-chip.selected {
+    border-color: #ffffff;
+    background-color: rgba(255, 255, 255, 0.05);
+  }
+
+  /* Upload dropzone */
+  .dropzone-active {
+    border-color: #ffffff !important;
+    background-color: rgba(255, 255, 255, 0.02) !important;
+  }
+
+  /* Smooth fade-in */
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(8px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  .animate-fadeIn {
+    animation: fadeIn 0.4s ease-out forwards;
+  }
+
+  .animate-fadeIn-delay-1 { animation-delay: 0.1s; opacity: 0; }
+  .animate-fadeIn-delay-2 { animation-delay: 0.2s; opacity: 0; }
+  .animate-fadeIn-delay-3 { animation-delay: 0.3s; opacity: 0; }
+}
